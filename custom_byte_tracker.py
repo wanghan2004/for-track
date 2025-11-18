@@ -166,7 +166,7 @@ class STrack(BaseTrack):
 
 class ByteTracker:
     # [修改] 构造函数现在只接收 'args'
-    def __init__(self, args, frame_rate=30):
+    def __init__(self, args, frame_rate):
         self.tracked_stracks = []; self.lost_stracks = []; self.removed_stracks = []
         self.frame_id = 0
         self.args = args
